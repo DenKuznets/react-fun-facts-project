@@ -19,9 +19,9 @@ function Header() {
 
 function Main() {
   return (
-    <div>
-      <h1 className='main-h1'>Reasons I'm excited to learn React</h1>
-      <ol className='main-ol'>
+    <div className="main">
+      <h1 className="main-h1">Reasons I'm excited to learn React</h1>
+      <ol className="main-ol">
         <li>
           It's a popular library, so I'll be able to fit in with the cool kids!
         </li>
@@ -33,8 +33,8 @@ function Main() {
 
 function Footer() {
   return (
-    <footer>
-      <small>© 2021 Kuznetsov development. All rights reserved.</small>
+    <footer className='footer'>
+      <small>© 2023 Kuznetsov development. All rights reserved.</small>
     </footer>
   );
 }

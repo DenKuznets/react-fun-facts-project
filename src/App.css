@@ -1,8 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Abel:regular);
 
+:root {
+  --light-orange: #e9c46a;
+  --orange: #f4a261;
+  --dark-orange: #e76f51;
+  --green: #2a9d8f;
+  --dark-green: #264653;
+}
+
 body {
   padding: 1rem;
   font-family: Abel;
+}
+
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
 }
 
 .nav-items {
@@ -14,21 +33,35 @@ body {
   font-weight: bold;
 }
 
-
-
 .nav {
-  
   display: flex;
   justify-content: space-between;
+  background-color: var(--orange);
+  padding: 0 3rem;
 }
 
-
-.App {
-  max-width: 500px;
-  margin: 0 auto;
+.main {
+  margin-top: 7rem;
 }
 
 .main-h1 {
+  padding-left: 0.4rem;
   font-size: 3rem;
-  /* font-weight: ; */
+  background-color: var(--dark-orange);
+}
+
+.main-ol {
+  background-color: var(--green);
+  padding: 1rem 2rem;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: var(--light-orange);
 }
